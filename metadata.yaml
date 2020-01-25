@@ -1,5 +1,7 @@
 homepage: https://omrilotan.com/
 documentation: https://github.com/omrilotan/sentry/
 versions:
+  - sha: 9b4ca03ce14ec2d3e79b7977ad9c241892205d2e
+    changeNotes: Make version configurable
   - sha: b7fb7b16d46b424ff83375ee0d74c9e66ceda88f
     changeNotes: Sentry template for Google Tag Manager
