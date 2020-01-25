@@ -79,7 +79,7 @@ function sentryLoaded() {
 }
 
 injectScript(
-  'https://browser.sentry-cdn.com/5.11.1/bundle.min.js',
+  'https://browser.sentry-cdn.com/' + data.version + '/bundle.min.js',
   sentryLoaded,
   data.gtmOnFailure,
   'sentry'
