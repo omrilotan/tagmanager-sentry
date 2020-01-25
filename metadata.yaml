@@ -1,2 +1,5 @@
-homepage: "https://omrilotan.com/"
-documentation: "https://github.com/omrilotan/sentry/"
+homepage: https://omrilotan.com/
+documentation: https://github.com/omrilotan/sentry/
+versions:
+  - sha: b7fb7b16d46b424ff83375ee0d74c9e66ceda88f
+    changeNotes: Sentry template for Google Tag Manager
