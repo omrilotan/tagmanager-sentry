@@ -1,4 +1,4 @@
-﻿___TERMS_OF_SERVICE___
+___TERMS_OF_SERVICE___
 
 By creating or modifying this file you agree to Google Tag Manager's Community
 Template Gallery Developer Terms of Service available at
@@ -54,7 +54,7 @@ ___TEMPLATE_PARAMETERS___
     "name": "version",
     "displayName": "SDK version",
     "simpleValueType": true,
-    "defaultValue": "5.11.1"
+    "defaultValue": "5.13.0"
   }
 ]
 
