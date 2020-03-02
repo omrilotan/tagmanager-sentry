@@ -1,6 +1,8 @@
 homepage: https://omrilotan.com/
 documentation: https://github.com/omrilotan/tagmanager-sentry
 versions:
+  - sha: 2d54fa27e40ac91694cc969e4a65eaf30eea4278
+    changeNotes: Bump default sentry version
   - sha: 55861baee58b1c6ee58485ec5fa03491a6c21101
     changeNotes: Fix documentation link
   - sha: 9b4ca03ce14ec2d3e79b7977ad9c241892205d2e
