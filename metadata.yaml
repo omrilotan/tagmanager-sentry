@@ -1,5 +1,5 @@
 homepage: https://omrilotan.com/
-documentation: https://github.com/omrilotan/sentry/
+documentation: https://github.com/omrilotan/tagmanager-sentry
 versions:
   - sha: 9b4ca03ce14ec2d3e79b7977ad9c241892205d2e
     changeNotes: Make version configurable
