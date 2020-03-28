@@ -1,12 +1,15 @@
 # Sentry template for Google Tag Manager
 
-![](https://user-images.githubusercontent.com/516342/73126661-46a86a80-3fbe-11ea-9a71-9cb3ad2d8aed.png)
+Add sentry script to page.
+After Sentry init, the custom event "sentryLoaded" will be fired.
+
+![](https://user-images.githubusercontent.com/516342/77833539-3728d780-714f-11ea-900e-5e25b0a7a8a9.png)
 
 1. This template loads the [Sentry SDK](https://docs.sentry.io/error-reporting/quickstart/?platform=browser).
 2. Upon success - it calls on init with DSN built from your Key and Application ID.
 3. Finally - it fires a custom event, `sentryLoaded` to be picked up by other tags in your system.
 
-For example, my custom tag configured Sentry dimensions
+An example custom tag configuring Sentry dimensions
 ```html
 <script>
 Sentry.configureScope(function configureSentryScope(scope) {
@@ -17,3 +20,5 @@ Sentry.configureScope(function configureSentryScope(scope) {
 ```
 
 ![](https://user-images.githubusercontent.com/516342/73126539-a736a800-3fbc-11ea-8d84-f7107b4d657a.png)
+
+Browse source code and tests in [src](./src) directory
