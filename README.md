@@ -5,6 +5,17 @@ After Sentry init, the custom event "sentryLoaded" will be fired.
 
 ![](https://user-images.githubusercontent.com/516342/77833539-3728d780-714f-11ea-900e-5e25b0a7a8a9.png)
 
+
+Find your project ID and public key [in your project's settings page on Sentry](https://sentry.io/settings):
+```
+─ projects
+  └─ <PROJECT_NAME>
+     └─ Client Keys (DSN)
+        └─ Configure (button)
+           ├─ Public Key (scroll down)
+           └─ Project ID
+```
+
 1. This template loads the [Sentry SDK](https://docs.sentry.io/error-reporting/quickstart/?platform=browser).
 2. Upon success - it calls on init with DSN built from your Key and Application ID.
 3. Finally - it fires a custom event, `sentryLoaded` to be picked up by other tags in your system.
