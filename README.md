@@ -6,7 +6,7 @@ After Sentry init, the custom event "sentryLoaded" will be fired.
 ![](https://user-images.githubusercontent.com/516342/77833539-3728d780-714f-11ea-900e-5e25b0a7a8a9.png)
 
 
-Find your project ID and public key key [in you settings page](https://sentry.io/settings):
+Find your project ID and public key [in your projects' settings page on Sentry](https://sentry.io/settings):
 ```
 ─ projects
   └─ <PROJECT_NAME>
