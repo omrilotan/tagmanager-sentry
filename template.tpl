@@ -54,7 +54,7 @@ ___TEMPLATE_PARAMETERS___
     "name": "version",
     "displayName": "SDK version",
     "simpleValueType": true,
-    "defaultValue": "5.15.5"
+    "defaultValue": "5.21.1"
   }
 ]
 
@@ -232,7 +232,7 @@ scenarios:
     runCode(mockData);
 
     assertApi('injectScript').wasCalled();
-setup: |
+setup: |-
   mock('injectScript', function(url, onSuccess, onFailure) {
     assertThat(url).isEqualTo('https://browser.sentry-cdn.com/1.2.3/bundle.min.js');
     onSuccess();
