@@ -16,7 +16,7 @@ Find your project ID and public key [in your project's settings page on Sentry](
            └─ Project ID
 ```
 
-1. This template loads the [Sentry SDK](https://docs.sentry.io/error-reporting/quickstart/?platform=browser).
+1. This template loads the [Sentry SDK](https://docs.sentry.io/platforms/javascript/configuration/install-cdn).
 2. Upon success - it calls on init with DSN built from your Key and Application ID.
 3. Finally - it fires a custom event, `sentryLoaded` to be picked up by other tags in your system.
 
