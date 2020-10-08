@@ -1,0 +1,25 @@
+name: 'CheckLatest'
+
+on:
+  schedule:
+    - cron: '0 9 * * 0'
+
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node:
+          - 14
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: checkVerion
+      run: echo $(./scripts/check-version/index.js) >> $GITHUB_ENV
+    - name: openIssue
+      uses: JasonEtco/create-an-issue@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        filename: .github/version-upgrade.md
