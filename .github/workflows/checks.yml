@@ -1,0 +1,25 @@
+name: 'CheckCode'
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  check:
+    name: CheckCode
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node:
+          - 14
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm i
+    - name: Run tests
+      run: ./scripts/check-src/index.js

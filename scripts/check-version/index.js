@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
-const { promises: { readFile } } = require('fs');
-const { join } = require('path');
-const req = require('./req');
+const req = require('../request');
+const tpl = require('../template');
 
 start();
 
@@ -19,29 +18,15 @@ async function start() {
     }
   });
 
-  const template = (
-    await readFile(
-      join(
-        __dirname,
-        '../../',
-        'template.tpl'
-      )
-    )
-  ).toString();
-  const params = JSON.parse(
-    template
-      .split('___TEMPLATE_PARAMETERS___')
-      .pop()
-      .split('___')
-      .shift()
-      .trim()
-  );
+  const params = JSON.parse(await tpl('___TEMPLATE_PARAMETERS___'));
+
+
   const { defaultValue } = params.find(({ name }) => name === 'version');
 
   if (defaultValue !== tag_name) {
     console.log(`issue_body="Default value is ${defaultValue} while latest version is ${tag_name}"`);;
   } else {
-    console.log('We\'re good here');
+    console.log('Do not open issue');
     process.exit(1);
   }
 }

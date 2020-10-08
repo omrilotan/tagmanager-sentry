@@ -1,0 +1,19 @@
+{
+  "name": "tagmanager-sentry",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Add sentry script to page. After Sentry init, the custom event \"sentryLoaded\" will be fired.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omrilotan/tagmanager-sentry.git"
+  },
+  "author": "omrilotan",
+  "license": "Apache",
+  "scripts": {
+    "test": "./scripts/check-src/index.js",
+    "maintenance": "./scripts/check-version/index.js"
+  },
+  "devDependencies": {
+    "yaml": "^1.10.0"
+  }
+}
