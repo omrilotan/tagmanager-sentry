@@ -24,7 +24,7 @@ async function start() {
   const { defaultValue } = params.find(({ name }) => name === 'version');
 
   if (defaultValue !== tag_name) {
-    console.log(`issue_body="Default value is ${defaultValue} while latest version is ${tag_name}"`);;
+    console.log(`issue_body="Default value is ${defaultValue} while latest version is ${tag_name}. [See docs](https://docs.sentry.io/platforms/javascript/install/cdn/)."`);;
   } else {
     console.log('Do not open issue');
     process.exit(1);
