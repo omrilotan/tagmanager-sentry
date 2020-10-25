@@ -11,9 +11,11 @@
   "license": "Apache",
   "scripts": {
     "test": "./scripts/check-src/index.js",
-    "maintenance": "./scripts/check-version/index.js"
+    "maintenance": "./scripts/check-version/index.js",
+    "commit": "./scripts/commit-update/index.js"
   },
   "devDependencies": {
+    "async-execute": "^1.2.0",
     "yaml": "^1.10.0"
   }
 }
