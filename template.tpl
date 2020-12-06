@@ -54,7 +54,7 @@ ___TEMPLATE_PARAMETERS___
     "name": "version",
     "displayName": "SDK version",
     "simpleValueType": true,
-    "defaultValue": "5.27.6"
+    "defaultValue": "5.28.0"
   }
 ]
 
